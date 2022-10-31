@@ -17,7 +17,7 @@ function App() {
 
 	return (
 		<div className="container">
-            {!isLoggedin && <LoginForm handleForm={{ username, password, setUserName, setPassword, onSubmitLoginForm }} onSubmitLoginForm={() => onSubmitLoginForm} /> }
+            {!isLoggedin && <LoginForm handleForm={{ username, password, setUserName, setPassword }} onSubmitLoginForm={ onSubmitLoginForm} /> }
             {isLoggedin && <Navbar onLogout={() => setLoggedIn(false)} />}
             { isLoggedin && <Account staffId={11} /> }
 		</div>

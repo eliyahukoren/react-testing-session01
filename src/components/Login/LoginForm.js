@@ -9,7 +9,7 @@ function LoginForm({ onSubmitLoginForm, handleForm }) {
         <React.Fragment>
             <div className="login-container"></div>
             <div className="login-form">
-                <form onSubmit={onSubmitLoginForm()}>
+                <form data-testid="login-form" onSubmit={e => onSubmitLoginForm(e)}>
                     <div className="mb-3">
                         <h3 className="login-form__header">{loginTitle}</h3>
                     </div>

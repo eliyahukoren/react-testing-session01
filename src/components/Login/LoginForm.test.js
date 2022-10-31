@@ -1,6 +1,5 @@
-import { render, screen } from '@testing-library/react';
-import LoginForm from './LoginForm';
+import { render, screen, fireEvent } from '@testing-library/react';
+import user from "@testing-library/user-event";
 
-describe('basic test for login form', () => {
-    it.todo('will finish later')
-})
+it.todo('will finish later')
+
